@@ -8,7 +8,7 @@
 
 body {
   background-color: yellow;
-  cursor: url(./pointer.png), auto;
+  cursor: url(./image/pointer.png), auto;
 }
 .container {
   display: flex;
@@ -80,7 +80,7 @@ input[type="number"] {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  cursor: url(./hand.png), auto;
+  cursor: url(./image/hand.png), auto;
 }
 .btn:hover {
   background: #fff;

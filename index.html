@@ -10,26 +10,28 @@
     <div class="container">
       <div class="guessingCard">
         <h3>&lt; Guess the number between 1 & 20 /&gt;</h3>
-        <span>12</span>
-        <input type="number" class="screenInput" />
-        <button class="btn">Submit!</button>
-        <button class="btn">Again!</button>
+        <span class="number">?</span>
+        <input type="number" class="screenInput" max="20" min="1"/>
+        <button class="btn check">Check!</button>
+        <button class="btn again">Again!</button>
+        <p class="message">Start Guessing...</p>
       </div>
       <div class="heading">
         <div class="design">
-          <img src="./image/question.png" alt="question">
+          <img src="./image/question.png" alt="question" />
         </div>
         <div class="pointSection">
           <div class="scoreSection">
-            <h3>💯Score: 20</h3>
+            <h3 class="score">💯Score: 20</h3>
           </div>
           <div class="highScore">
-            <h3>🥇highScore: 17</h3>
+            <h3 class="hiscore">🥇highScore: 17</h3>
           </div>
         </div>
-        <h2>Guessing Game🤔💭</h2>
-        <p>HTML, CSS & Javascript</p>
+        <h2 class="sidename">Guessing Game🤔💭</h2>
+        <p class="sidepara">HTML, CSS & Javascript</p>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

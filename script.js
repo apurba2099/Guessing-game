@@ -3,6 +3,7 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 console.log(secretNumber); //testing tempo!
 let score = 20;
+let hiscore = 0;
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.screenInput').value);
@@ -18,6 +19,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').style.backgroundColor = '#7FFF94';
     document.querySelectorAll('.btn').forEach(element => {
       element.style.backgroundColor = '#7FFF94';
+
+      if (score > hiscore) {
+        hiscore = score;
+        document.querySelector('.hiscore').textContent = hiscore;
+      }
     });
   } else if (guess > secretNumber) {
     if (score > 1) {

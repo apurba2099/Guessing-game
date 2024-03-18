@@ -24,7 +24,7 @@ body {
 }
 .guessingCard {
   width: 500px;
-  height: 500px;
+  height: 550px;
   margin: 20px;
   padding: 16px;
   display: flex;
@@ -78,19 +78,19 @@ input[type='number'] {
   margin: 10px auto;
   padding: 16px;
   font-size: 1.5rem;
-  color: #ffff;
-  background-color: #000000;
+  color: black;
+  background-color: yellow;
   border: none;
   border-radius: 16px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   cursor: url(./image/hand.png), auto;
+  transition: all 0.1s ease-in;
 }
-.btn:hover {
-  background: #fff;
-  border: none;
-  color: #000000;
+.btn:active {
+  background-color: #ffd559;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 .heading {
   margin: 20px;

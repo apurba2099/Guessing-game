@@ -191,15 +191,20 @@ input[type='number'] {
   .container {
     flex-direction: column; /* Stack elements vertically */
   }
-  .guessingCard, .heading {
+  .guessingCard,
+  .heading {
     width: 100%; /* Make elements full width */
     margin: 10px 0; /* Adjust margins for smaller screens */
   }
   .heading img {
     top: 0; /* Remove top position for smaller screens */
   }
-  .scoreSection, .highScore {
+  .scoreSection,
+  .highScore {
     font-size: 1rem; /* Reduce font size for better readability */
+  }
+  .design img {
+    display: none;
   }
   /* Add more styles as needed for smaller screens */
 }

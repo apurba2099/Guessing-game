@@ -183,3 +183,23 @@ input[type='number'] {
     transform: rotateY(180deg);
   }
 }
+
+/* Styles for all devices */
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+  .guessingCard, .heading {
+    width: 100%; /* Make elements full width */
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+  .heading img {
+    top: 0; /* Remove top position for smaller screens */
+  }
+  .scoreSection, .highScore {
+    font-size: 1rem; /* Reduce font size for better readability */
+  }
+  /* Add more styles as needed for smaller screens */
+}

@@ -187,8 +187,11 @@ input[type='number'] {
 /* Styles for all devices */
 
 /* Styles for screens smaller than 768px */
-@media (max-width: 768px) {
-  .container {
+@media (min-width: 310px) and (max-width: 720px) {
+    .design img {
+    display: none;
+  }
+   .container {
     flex-direction: column; /* Stack elements vertically */
   }
   .guessingCard,
@@ -203,8 +206,5 @@ input[type='number'] {
   .highScore {
     font-size: 1rem; /* Reduce font size for better readability */
   }
-  .design img {
-    display: none;
-  }
-  /* Add more styles as needed for smaller screens */
 }
+

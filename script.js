@@ -11,8 +11,7 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     document.querySelector('.message').textContent = 'Please input a number🙏!';
   } else if (guess === secretNumber) {
-    document.querySelector('.message').textContent =
-      '🎊Congratulations you won🎊';
+    document.querySelector('.message').textContent = '🎊Correct number!🎊';
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#7FFF94';
     document.querySelector('.number').style.width = '18rem';

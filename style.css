@@ -184,27 +184,44 @@ input[type='number'] {
   }
 }
 
-/* Styles for all devices */
-
-/* Styles for screens smaller than 768px */
+/* mobile responsive code */
 @media (min-width: 310px) and (max-width: 720px) {
-    .design img {
-    display: none;
+  .container {
+    flex-direction: column;
   }
-   .container {
-    flex-direction: column; /* Stack elements vertically */
+  .guessingCard {
+    position: relative;
+    top: 250px;
   }
   .guessingCard,
   .heading {
-    width: 100%; /* Make elements full width */
-    margin: 10px 0; /* Adjust margins for smaller screens */
+    width: 100%;
+    margin: 10px 0;
   }
   .heading img {
-    top: 0; /* Remove top position for smaller screens */
+    top: 0;
+  }
+  .pointSection {
+    position: absolute;
+    top: 140px;
+    font-size: 1rem;
+    margin: 0px 50px;
+  }
+  .design img {
+    display: none;
   }
   .scoreSection,
   .highScore {
-    font-size: 1rem; /* Reduce font size for better readability */
+    margin: 2px;
+  }
+  .sidename,
+  .sidepara {
+    position: relative;
+    top: -800px;
+    margin: 0;
+  }
+  .guessingCard h3 {
+    text-align: center;
+    letter-spacing: 1.6px;
   }
 }
-
